@@ -1,0 +1,53 @@
+.main {
+  position: relative;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+   }
+
+  &__description-title {
+    font-size: 5.2rem;
+  }
+
+  &__description-subtitle {
+
+  }
+
+  &__description-text {
+    font-size: 1.8rem;
+    &:first-child {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__btn {
+    display: block;
+    margin-top: 40px;
+    padding: 15px 20px;
+    border-radius: 6px;
+    background-color: #269384;
+    color: #FFF;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .3s;
+    &:hover {
+      background-color: #FFF;
+      color: #269384;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 50%;
+    border-radius: 6px;
+    object-fit: contain;
+  }
+}
