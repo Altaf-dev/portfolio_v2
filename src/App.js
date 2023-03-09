@@ -4,13 +4,12 @@ import Navbar from './navigate/Navigate'
 import Main from './main/Main'
 
 
-
 function App() {
   return (
       <Router>
         <Navbar/>
         <Routes>
-          <Route exact path="/" element={<Main/>}/>
+          <Route exact path="/portfolio_v2" element={<Main/>}/>
           <Route/>
           <Route/>
           <Route/>

@@ -36,12 +36,12 @@ export class Navbar extends React.Component {
                     </NavLink>
                     <nav
                         className={this.state.className ? "header__menu active" : "header__menu"}>
-                        <ul className="menu">
-                            <NavLink className="menu-item" to="/">Главная</NavLink>
+                        <div className="menu">
+                            <NavLink className="menu-item" to="/portfolio_v2">Главная</NavLink>
                             <NavLink className="menu-item" to="/certificate">Сертификаты</NavLink>
                             <NavLink className="menu-item" to="/portfolio">Мои работы</NavLink>
                             <NavLink className="menu-item" to="/contact">Контакты</NavLink>
-                        </ul>
+                        </div>
                     </nav>
                     <button
                         onClick={this.menuClick}
