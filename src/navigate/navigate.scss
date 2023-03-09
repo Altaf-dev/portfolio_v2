@@ -46,6 +46,7 @@
     width: 100%;
     @media screen and (max-width: 992px) {
       flex-direction: column;
+      padding-bottom: 40px;
     }
   }
 
@@ -54,12 +55,6 @@
     font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 600;
-
-    //&:hover {
-    //  &:before {
-    //    width: 100%;
-    //  }
-    //}
     @media screen and (max-width: 992px) {
       padding: 10px 0;
       margin: 15px 0;

@@ -18,7 +18,9 @@ const Main = () =>{
                         setPopupActive(true)
                     }} className="main__btn">Отправить сообщение в Телеграм</button>
                 </div>
-                <img src={require("../img/mainBg.png")} alt="img" className="main__img"/>
+                <div className="main__img-wrapper">
+                    <img src={require("../img/mainBg3.png")} alt="img" className="main__img"/>
+                </div>
             </div>
             { popupActive && <Popup popupClose={setPopupActive}/> }
         </section>
