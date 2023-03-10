@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-export class Navbar extends React.Component {
+export class Header extends React.Component {
 
     constructor(props) {
         super(props);
@@ -40,7 +40,7 @@ export class Navbar extends React.Component {
                             <NavLink className="menu-item" to="/portfolio_v2">Главная</NavLink>
                             <NavLink className="menu-item" to="/certificate">Сертификаты</NavLink>
                             <NavLink className="menu-item" to="/portfolio">Мои работы</NavLink>
-                            <NavLink className="menu-item" to="/contact">Контакты</NavLink>
+                            <NavLink className="menu-item" to="/contacts">Контакты</NavLink>
                         </div>
                     </nav>
                     <button
@@ -58,4 +58,4 @@ export class Navbar extends React.Component {
 }
 
 
-export default Navbar;
+export default Header;

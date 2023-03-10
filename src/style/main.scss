@@ -1,6 +1,5 @@
 .main {
   position: relative;
-  padding: 50px 0;
 
   &__wrapper {
     display: flex;
@@ -11,6 +10,7 @@
   &__description {
     display: flex;
     flex-direction: column;
+    margin-top: 80px;
    }
 
   &__description-title {
@@ -51,6 +51,7 @@
     position: relative;
     width: 50%;
     height: fit-content;
+    transition: .3s;
 
     &:before {
       content: '';
@@ -70,7 +71,7 @@
       content: '';
       position: absolute;
       display: block;
-      background-image: url("../img/idea.png");
+      background-image: url("../images/idea.png");
       background-size: contain;
       background-repeat: no-repeat;
       width: 10%;

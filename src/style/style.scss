@@ -1,6 +1,10 @@
-@import "../navigate/navigate";
-@import "../main/main";
-@import "../popup/popup";
+@import "./navigate";
+@import "./main";
+@import "./popup";
+@import "./certificate";
+@import "./portfolio";
+@import "./contacts";
+@import "./footer";
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap');
 
 * {
@@ -61,6 +65,10 @@ textarea {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.section {
+  padding: 50px 0;
 }
 
 //Точки для адаптива
