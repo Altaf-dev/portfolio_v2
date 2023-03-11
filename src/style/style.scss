@@ -1,4 +1,4 @@
-@import "./navigate";
+@import "./header";
 @import "./main";
 @import "./popup";
 @import "./certificate";
@@ -9,6 +9,7 @@
 
 * {
   box-sizing: border-box;
+
 
   &:after,
   &:before {
@@ -69,6 +70,27 @@ textarea {
 
 .section {
   padding: 50px 0;
+}
+
+
+
+.light-them {
+  color: #333333;
+  background-color: #FFF;
+
+  nav {
+    background-color: #FFF;
+  }
+
+  a {
+    color: #333333;
+  }
+
+  .main__img-wrapper {
+    &:before {
+      background-color: #333333;
+    }
+  }
 }
 
 //Точки для адаптива

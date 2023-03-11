@@ -1,11 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Moon from "./IconMoon";
+import Sun from "./IconSun";
 
 export class Header extends React.Component {
 
     constructor(props) {
         super(props);
         this.menuClick = this.menuClick.bind(this)
+        this.themToggle = this.themToggle.bind(this)
         this.state = {className: false}
     }
 
@@ -14,6 +17,19 @@ export class Header extends React.Component {
             className: !prevState.className
         }))
     }
+
+    themToggle(){
+        const body = document.querySelector(".page")
+        const themSwitch = document.querySelector(".switch")
+        const icon = document.querySelectorAll(".icon")
+        body.classList.toggle("light-them")
+        themSwitch.classList.toggle("active")
+
+        icon.forEach((item) => {
+            item.classList.toggle("active")
+        })
+    }
+
 
 
     render() {
@@ -43,6 +59,14 @@ export class Header extends React.Component {
                             <NavLink className="menu-item" to="/contacts">Контакты</NavLink>
                         </div>
                     </nav>
+
+                    <div onClick={this.themToggle} className="them-switch">
+                        <Moon/>
+                        <button className={'switch'}></button>
+                        <Sun/>
+                    </div>
+
+
                     <button
                         onClick={this.menuClick}
                         className={this.state.className ? 'header__btn active':'header__btn'}>
@@ -50,7 +74,11 @@ export class Header extends React.Component {
                         <span className="btn-title-one">Меню</span>
                         <span className="btn-title-two">Close</span>
                     </button>
+
+
                 </div>
+
+
             </header>
         )
     }
