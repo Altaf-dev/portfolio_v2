@@ -8,7 +8,7 @@ const Main = () =>{
 
     return (
         <>
-            <section className="main section">
+            <section className="main">
                 <div className="container main__wrapper">
                     <div className="main__description">
                         <h1 className="main__description-title">HTML верстальщик</h1>

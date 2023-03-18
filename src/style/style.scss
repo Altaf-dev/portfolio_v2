@@ -66,29 +66,51 @@ textarea {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  @media screen and (max-width: 992px) {
+    max-width: 620px;
+  }
 }
-
-.section {
-  padding: 50px 0;
-}
-
 
 
 .light-them {
   color: #333333;
   background-color: #FFF;
 
+  .logo-text {
+    fill: #333333;
+  }
+
   nav {
-    background-color: #FFF;
+    background-color: rgba(255, 255, 255, .7);
   }
 
   a {
     color: #333333;
   }
 
+  .close-line {
+    background-color: #333333;
+  }
+
+  .btn-line {
+    background-color: #333333;
+    &:before,
+    &:after {
+      background-color: #333333;
+    }
+    @media screen and (max-width: 992px) {
+      background-color: #269384;
+      &:before,
+      &:after {
+        background-color: #269384;
+      }
+    }
+  }
+
   .main__img-wrapper {
     &:before {
       background-color: #333333;
+      box-shadow: 0 0 8px 8px rgba(51, 51, 51, 1);
     }
   }
 }
