@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Age from "./Age";
 import Popup from "../popup/Popup";
 import About from "../about/About";
+import MainBg from "./MainBg";
 
 const Main = () =>{
     const [popupActive, setPopupActive] = useState(false)
@@ -21,7 +22,7 @@ const Main = () =>{
                         }} className="main__btn">Отправить сообщение в Телеграм</button>
                     </div>
                     <div className="main__img-wrapper">
-                        <img src={require("../../images/mainBg3.png")} alt="img" className="main__img"/>
+                        <MainBg/>
                     </div>
                 </div>
                 { popupActive && <Popup popupClose={setPopupActive}/> }
